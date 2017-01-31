@@ -47,46 +47,54 @@
 		$(document).ready(function($) { 
 			$(".scroll").click(function(event){
 				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
-			});
-			$("#icon-menu").click(function(){
-				$("#lista-menu").toggleClass('esconder');
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 1500);
 			});
 		});
 	</script>
 </head>
 <body>
 	<header>
+		<section class="header-section">
+			<img src="img/eu.jpg">
+			<h1> < Talita Oliveira /> </h1>
+			<small>programadora PHP <br>e dev front-end nas horas vagas</small>
+			<div id="social">
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/liitaoliveira" target="_blank" class="icon-facebook">
+							<i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://br.linkedin.com/in/litaaoliveira" target="_blank" class="icon-linkedin">
+							<i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/talitaoliveira/" target="_blank" class="icon-github">
+							<i class="fa fa-github fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://codepen.io/talitaoliveira/" target="_blank" class="icon-codepen">
+							<i class="fa fa-codepen fa-4x" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
 		
-		<img src="img/eu.jpg">
-		<h1> < Talita Oliveira /> </h1>
-		<small>programadora PHP <br>e dev front-end nas horas vagas</small>
-		<div id="social">
-			<ul>
-				<li>
-					<a href="https://www.facebook.com/liitaoliveira" target="_blank" class="icon-facebook">
-						<i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://br.linkedin.com/in/litaaoliveira" target="_blank" class="icon-linkedin">
-						<i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/talitaoliveira/" target="_blank" class="icon-github">
-						<i class="fa fa-github fa-4x" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li>
-					<a href="http://codepen.io/talitaoliveira/" target="_blank" class="icon-codepen">
-						<i class="fa fa-codepen fa-4x" aria-hidden="true"></i>
-					</a>
-				</li>
-			</ul>
+		
+		<div class="bouncy-arrow">
+			<a href="#sobre" class="scroll">
+				<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+			</a>
 		</div>
-		
 	</header>
+
+	<section id="sobre" class="eu">
+		<h2>TALITA OLIVEIRA</h2>
+	</section>
 
 </body>
 </html>
